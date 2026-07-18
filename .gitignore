@@ -1,0 +1,38 @@
+# --- Upstream RuView ---
+# RuView entra como SUBMODULE (ver .gitmodules / docs/03). Não ignorar aqui.
+# Para trazer no notebook: git clone --recurse-submodules  (ou git submodule update --init)
+
+# --- Python ---
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Modelos / dados grandes ---
+*.rvf
+*.onnx
+*.pt
+*.bin
+data/models/
+*.csv
+*.parquet
+
+# --- Node / build ---
+node_modules/
+dist/
+build/
+target/
+
+# --- Ambiente / segredos ---
+.env
+*.local
+.env.*.local
+
+# --- OS / IDE ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
